@@ -1,175 +1,180 @@
-body
-{
-   background: #ffffff;
-   font-family: 'Rajdhani', sans-serif;
-   font-weight: 400;
+* {
+	margin: 0;
+	padding: 0;
 }
-html,body
-{
-  width: 100%;
-  overflow-x: hidden;
+body {
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 400;
 }
-html 
-{
-  font-size: 100%;
-  scroll-behavior: smooth;
+html, body {
+	width: 100%;
+	overflow-x: hidden;
 }
-.navbar-light .navbar-nav .nav-link {
-   color: black;
-    margin-left: 1rem;
-    font-weight: 700;
+html {
+	font-size: 100%;
+	scroll-behavior: smooth;
 }
-.navbar-light .navbar-nav .nav-link:hover {
-    border-top: 1px solid #7cd9e8;
-    border-right: 1px solid #7cd9e8;
-    color: black;
-    transition: all 0.6s ease;
-    transform: rotateY(-45deg);
-}
-.active
-{
-    border-left: 1px solid lightblue;
-    border-bottom: 1px solid lightblue;
-}
-.fontsome
-{
-    font-size: 80px;
-    color:#7cd9e8;
-}
-h1,h2,h3 {
-  font-weight: 500;
-  letter-spacing: 0.3rem;
-  text-transform: uppercase;
+h1, h2, h3 {
+	font-weight: 500;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
 }
 h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
+	font-size: 2.8rem;
+	font-weight: 700;
 }
 h2 {
-  color: #828282;
-  padding-bottom: 10px;
-  font-size: 2rem;
+	color: #828282;
+	padding-bottom: 10px;
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+p {
+	letter-spacing: 0.8px;
+	line-height: 27px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: black;
+	margin-left: 1rem;
+	font-weight: 700;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-ms-transition: -ms-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+	border-top: 1px solid #7cd9e8;
+	border-right: 1px solid #7cd9e8;
+	color: black;
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.active {
+	border-left: 1px solid lightblue;
+	border-bottom: 1px solid lightblue;
+}
+.fontsome {
+	font-size: 80px;
+	color: #7cd9e8;
 }
 
-h3 
-{
-  font-size: 1.5rem;
-  line-height: 2rem;
+img {
+	width: 100%;
 }
-
-p 
-{
-  letter-spacing: 0.8px;
-  line-height: 27px;
+#introduction {
+	padding-top: 5rem;
 }
-img
-{
-    width: 100%;
+.card {
+	border: none;
 }
-#introduction
-{
-    padding-top: 5rem;
-}
-.card
-{
-    border: none;
-}
-.sectionGap
-{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+.sectionGap {
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 .go-top {
-    background-color: #eee;
-    bottom: 2em;
-    right: 2em;
-    color: #111112;
-    font-size: 22px;
-    display: none;
-    position: fixed;
-    text-decoration: none;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .go-top:hover {
-      background: #f1c11a;
-      color: #ffffff;
-  }
-.footerwidth{
-    padding-top: 2rem;
-    color:#9E9E9E;
+	background-color: #eee;
+	bottom: 2em;
+	right: 2em;
+	color: #111112;
+	font-size: 22px;
+	display: none;
+	position: fixed;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
 }
-
-/* Skills progress bars*/
-.Progress-label {
-    font-size: 1em;
-    font-family: Helvetica, sans-serif;
-    display: block;
+.project-location {
+	border: 1px solid black;
+	border-radius: none;
+	font-weight: 700;
+	margin: auto 6rem;
 }
-.Progress-main {
-    background-color: red;
-    display: block;
-    width: 100%;
-    height: 0.5em;
-    margin-top: 0.3em;
+.project-location:hover {
+	border: 2px solid #7cd9e8;
 }
-.Progress-main::-moz-progress-bar { 
-    background: #F2F2F2;
+a img {
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-ms-transition: -ms-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+	overflow: hidden;
 }
-.Progress-main::-webkit-progress-bar {
-    background: #F2F2F2;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+a:hover img {
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
-.Progress-main::-webkit-progress-value {
-    background:  #7cd9e8;
+.service-card {
+	-moz-transition: -moz-transform 0.5s ease-out;
+	-webkit-transition: -webkit-transform 0.5s ease-out;
+	-ms-transition: -ms-transform 0.5s ease-out;
+	transition: transform 0.5s ease-in;
 }
-.Progress-main::-ms-fill { 
-    background:  #7cd9e8;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) inset;
+.service-card:hover {
+	-moz-transform: rotateZ(-360deg);
+	-webkit-transform: rotateZ(-360deg);
+	-ms-transform: rotateZ(-360deg);
+	transform: rotateZ(-360deg);
 }
-.Progress-bar {
-    margin-top: 0.5em;
-    background-color: #F2F2F2;
-    height: 0.3em;
+.go-top:hover {
+	background: #f1c11a;
+	color: #ffffff;
 }
-.Progress-value {
-    background-color: #7cd9e8;
-    display: block;
-    height: 0.3em;
+.footerwidth {
+	padding-top: 2rem;
+	color: #9E9E9E;
 }
-
 /* Media viewport for tablets*/
 
-@media (max-width:767px)
-{
-    .navbar-light .navbar-toggler {
-        color: rgba(0, 0, 0, 0.5);
-        outline: none;
-        border: none;
-    }
-    .navbar-light .navbar-nav .nav-link {
-        margin-left: 0px;
-        border: none !important;
-     }
-     .pt-4, .py-4 {
-        padding-top: 0rem !important;
-    }
-
+@media (max-width:767px) {
+	.navbar-light .navbar-toggler {
+		color: rgba(0, 0, 0, 0.5);
+		outline: none;
+		border: none;
+	}
+	.navbar-light .navbar-nav .nav-link {
+		margin-left: 0px;
+		border: none !important;
+	}
+	.pt-4, .py-4 {
+		padding-top: 0rem !important;
+	}
 }
-@media(max-width:991px)
-{
-    h1, h2, h3 {
-        font-weight: 500;
-        letter-spacing: 0.1rem;
-        text-transform: uppercase;
-    }
-    h3 {
-        font-size: 1.4rem;
-        line-height: 2rem;
-    }
-
+@media(max-width:991px) {
+	h1, h2, h3 {
+		font-weight: 500;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 1.4rem;
+		line-height: 2rem;
+	}
+	.project-location {
+		margin: auto 3rem;
+	}
+}
+@media (min-width:1024px) {
+	.project-location {
+		margin: auto 5rem;
+	}
+}
+@media (max-width:567px) {
+	.project-location {
+		margin: auto 5rem;
+	}
+	@media (min-width: 375px) {
+		.project-location {
+			margin: auto 7rem;
+		}
+	}
 }
