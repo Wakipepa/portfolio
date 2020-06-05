@@ -11,6 +11,10 @@
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
+	<!--=================Page Loader =====================-->
+	<div class="loader-bg">
+		<div class="loader"></div>
+	</div>
 	<!--=================Navigation Navbar=====================-->
 	<nav class="navbar navbar-expand-sm pt-4 navbar-light">
 		<!-- Brand -->
@@ -49,7 +53,7 @@
 					<p>JUNIOR WEB DEVELOPER/DESIGNER</p><a href="#about"><button class="btn btn-info">HIRE ME</button></a> <a href="cv/RAPHAEL.pdf" target="_blank"><button class="btn btn-outline-info ml-2">MY CV</button></a>
 				</div>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 ">
 				<div class=" mt-5 wow fadeInRight"><img alt="" class="img-fluid" src="img/pic1.jpg"></div>
 			</div>
 		</div>
@@ -58,10 +62,10 @@
 	<!--======================About Section===================-->
 	<section class="container sectionGap" id="about">
 		<div class="row">
-			<div class="col-sm-5">
+			<div class="col-sm-5 ">
 				<div class="wow bounce"><img alt="" class="img-fluid" src="img/pica.jpg"></div>
 			</div>
-			<div class="col-sm-7">
+			<div class="col-sm-7 ">
 				<div class="row">
 					<div class="col-sm-11 m-auto wow fadeInRight">
 						<h2>ABOUT ME</h2>
@@ -240,5 +244,10 @@
 	      });
 	      
 	</script>
+	<script>
+		setTimeout(function(){
+			$('.loader-bg').fadeToggle();
+		},1500);
+    </script>
 </body>
 </html>
