@@ -111,6 +111,23 @@ p {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 }
+.about{
+	position: relative;
+	display: inline-block;	
+}
+.about::after
+{
+	content: "";
+	width: 30%;
+	height: 3px;
+	background: #828282;
+	position: absolute;
+	left:calc(50% - 20%);
+	bottom: 0;
+	margin-bottom: -5px;
+
+}
+
 .active {
 	border-left: 1px solid lightblue;
 	border-bottom: 1px solid lightblue;
